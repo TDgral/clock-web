@@ -1,3 +1,4 @@
+import Container from 'react-bootstrap/Container'
 import "../sass/clock.sass"
 import React, {useState, useEffect} from "react";
 
@@ -12,10 +13,14 @@ const Clock = () => {
     }, [])
 
     return (        
-        <div className="content">
-            <h1>{clockState}</h1>
-        </div>
+        <Container className="align-middle">
+            <div className="content">
+                <span>Now Its</span>
+                <div className="clock">
+                    <h1>{clockState}</h1>   
+                </div>
+            </div>
+        </Container>
     )
 };
-
 export default Clock;

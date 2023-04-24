@@ -1,7 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&display=swap')
+
 $text-color: #503939
 $bg-color: #ffe898
 $card-color: #f4e9c2
+$font: "Josefin Sans", sans-serif
 
-.content
+body
+    height: 100vh
+    width: 100vw
     display: flex
-    align-items: center
+
+    .content
+        width: 660px
+        height: 300px
+        background-color: $card-color
+        color: $text-color
+
+        span
+            font-family: $font
+            font-weight: 400
+            color: $text-color
+            letter-spacing: 2%
+            margin: 10px
+            font-size: 32px
+
+        .clock
+            height: 200px
+            align-items: center
+            justify-content: center
+            display: flex
+        
+            h1
+                letter-spacing: -3%
+                font-size: 64px
+                font-family: $font
+                font-weight: 200
